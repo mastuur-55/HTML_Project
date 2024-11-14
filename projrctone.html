@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Somali Literature Table</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 239, 244);
+    color: hsl(120, 7%, 8%);
+}
+
+.header {
+    background-color: hsl(120, 80%, 41%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(120, 10%, 4%);
+    padding: 3px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.cont {
+
+    text-align: center;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0db123;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.card-cont {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 550px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 50%;
+    height:auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+form{
+    display:inline;
+    width: 100%;
+    max-width: 60px;
+    margin-top: 0 auto;
+    border-radius: 8px;
+   
+}
+label{
+display: block;
+margin-bottom:10px ;
+font-weight:bold ;
+}
+input[type="text"],input[type="email"],textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom:10px ;
+    border:1px solid #ddd ;
+    border-radius:1px ;
+
+}
+textarea{
+    resize: vertical;
+}
+footer{
+    background-color:green;
+}
+
+    </style> 
+</head>
+<body>
+
+    <div class="header">
+        <h1>Html Learning Projects</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="contact .html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="#projects">Testimonials</a>
+    </div>
+
+    <div class="cont">
+        <h2>About This Project</h2>
+        <p>This project helps students learn HTML and CSS basics by creating a structured web page.</p>
+        <img src="html/maska.jpg"width="20px">
+    </div>
+
+    <h2>Project List</h2>
+    <table>
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Portfolio Website</td>
+            <td>Showcase your projects and skills</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Personal Blog</td>
+            <td>A simple blogging platform</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+
+    <h3><b>Testimonials</b></h3>
+    <p><b>Challenge:</b> Recreate this grid layout of testimonials using HTML and CSS</p>
+
+    <div class="card-cont">
+        <div class="card">
+            <img src="html/maska.jpg" width="250px"  height="10px"class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <b>Reviewer one</b><br>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="html/maska.jpg" width="250px"   height="10px"  class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="html/maska.jpg" width="250px"   height="10px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <h2>Contact Me</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="couse">message:</label>
+        <textarea id="bio" name="" rows="4" cols="50"></textarea><br>
+      
+    </form>
+    <footer> 
+        <p> next</p>
+
+    </footer>
+
+</body>
+</html>
